@@ -51,7 +51,7 @@ public class ABC {
         }
         final int i = ABC.indexOf(c);
         if (i == -1) {
-            throw new NotInABC(String.valueOf(c) + " no está en el abecedario.");
+            throw new NotInABC("\"" + String.valueOf(c) + "\" no está en el abecedario.");
         }
         return ABC.indexOf(c);
     }
